@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: center no-repeat url(./assets/images/background-mobile.png);
+  color: white;
+  font-family: Inconsolata;
+  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.body_minor {
+  width: 100%;
+}
+.heading_element {
+  display: flex;
+  gap: 10px;
+  text-transform: capitalize;
+  margin: 2rem auto;
+  align-items: center;
+  justify-content: center;
+}
+.whev {
+  margin: 0;
+  padding: 0;
+}
+
+.heading_element img {
+  height: 1rem;
+}
+
+.second_element {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 80%;
+  color: hsl(245, 15%, 58%);
+}
+
+.second_element h2 {
+  margin-bottom: 1.3rem;
+  color: white;
+  font-weight: 700;
+}
+
+.form_upload {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_upload label {
+  text-transform: capitalize;
+  margin-left: calc(4.5%);
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.upload_avatar {
+  color: hsl(245, 15%, 58%);
+  width: 90%;
+  background: rgba(75, 72, 106, 0.3);
+  margin: 10px auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed hsl(252, 6%, 83%);
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.upload_avatar .img_cont {
+  background: rgba(75, 72, 106, 0.6);
+  margin-bottom: 15px;
+  padding: 6px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: auto;
+  max-height: 3rem;
+  max-width: 10%;
+  min-width: 3rem;
+  min-height: 3rem;
+  object-fit: cover;
+}
+.alternate {
+  background: rgba(75, 72, 106, 0.6);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  /* height: auto; */
+  max-height: 3rem;
+  max-width: 10%;
+  min-width: 3rem;
+  min-height: 3rem;
+  object-fit: cover;
+}
+
+.upload_avatar .img_stuff {
+  width: 100%;
+  height: 20%;
+  display: block;
+  object-position: center;
+  object-fit: cover;
+}
+
+.alternate_img {
+  width: 100%;
+  height: 3rem;
+  display: block;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.uploaded_text_div {
+  /* display: none; */
+  display: flex;
+  gap: 10px;
+}
+.uploaded_text_div button {
+  background: rgba(75, 72, 106, 0.6);
+  padding: 4px 1rem;
+  width: auto;
+  border-radius: 5px;
+  color: hsl(245, 15%, 58%);
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.uploaded_text_div button:hover {
+  background: rgba(75, 72, 106, 0.3);
+}
+
+.post_upload_avatar {
+  color: hsl(245, 15%, 58%);
+  font-size: 12px;
+  display: flex;
+  gap: 3px;
+  margin-left: calc(4.5%);
+  margin-bottom: 1.5rem;
+}
+
+.error-message {
+  height: auto;
+  display: flex;
+  /* align-self: center; */
+  justify-content: center;
+  /* margin-left: calc(4.5%); */
+  /* margin-left: 70px; */
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs label {
+  margin-left: calc(4.5%);
+  margin-top: 13px;
+}
+
+input,
+button {
+  color: white;
+  width: 90%;
+  background: rgba(75, 72, 106, 0.3);
+  margin: 8px auto 6px auto;
+  padding: 1rem 10px;
+  border: 1px solid hsl(252, 6%, 83%);
+  border-radius: 10px;
+  z-index: 100;
+}
+input:hover {
+  background: rgba(75, 72, 106, 0.6);
+}
+button {
+  background: hsl(7, 88%, 67%);
+  color: hsl(248, 70%, 10%);
+  margin-bottom: 6rem;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: hsl(7, 71%, 60%);
+}
+
+.gradient {
+  background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  color: transparent;
+  background-clip: text;
+}
+.bottom_design {
+  height: 12rem;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.top_curl_design {
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.line_design {
+  height: 70%;
+  transform: translateY(-10%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.circle_design_left {
+  position: absolute;
+  top: -7%;
+  left: -4%;
+  height: 6rem;
+  z-index: 1;
+}
+.circle_design_right {
+  position: absolute;
+  top: 55%;
+  right: -8%;
+  height: 6rem;
+  z-index: 1;
+}
+
+.ticket {
+  width: 100vw;
+  position: relative;
+  z-index: 100;
+  /* margin: 0 auto; */
+  display: flex;
+  letter-spacing: 1.2px;
+}
+
+.ticket p {
+  color: hsl(245, 15%, 58%);
+}
+.ticket .pattern-ticket {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.ticket_in {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  justify-content: space-between;
+  display: flex;
+  width: 90%;
+  height: 210px;
+}
+.ticket_in_main {
+  width: 81%;
+  justify-content: space-between;
+}
+.ticket_in_main div {
+  height: 50%;
+  width: 100%;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  justify-self: center;
+  align-content: center;
+}
+
+.ticket_in_main h2,
+p {
+  display: flex;
+  align-items: center;
+}
+
+.user,
+.company {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+.side {
+  align-self: center;
+  color: hsl(245, 15%, 58%);
+}
+.side h3 {
+  transform: rotate(270deg);
+}
+
+.span {
+  /* color: linear; */
+  background: linear-gradient(to right());
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  border-color: red;
+}
+
+#emailError {
+  margin-left: calc(4.5%);
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+  padding-left: 2px;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    background: center no-repeat url(./assets/images/background-desktop.png);
+  }
+  form {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  .second_element {
+    margin: 0 auto;
+    /* background: red; */
+    justify-items: center;
+  }
+  .second_element h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.3rem;
+    font-size: 2.5em;
+    max-width: 60%;
+    text-align: center;
+  }
+  .second_element h4 {
+    margin-top: 1.3rem;
+    max-width: 30%;
+    text-align: center;
+  }
+
+  input:focus {
+    outline: white 1px solid;
+    outline-offset: 2px;
+  }
+
+  input:hover {
+    background: rgba(75, 72, 106, 0.5);
+  }
+
+  .bottom_design {
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+  .top_curl_design {
+    height: 25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .line_design {
+    height: 100%;
+    width: 100%;
+    transform: translateY(-10%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .circle_design_left {
+    top: -12%;
+    left: 5%;
+    height: 12rem;
+  }
+  .circle_design_right {
+    top: 45%;
+    right: 22%;
+    height: 12rem;
+  }
+
+  .ticket {
+    width: 40%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-self: center;
+    margin-top: 6rem;
+  }
+
+  .span {
+    /* color: linear; */
+    background: linear-gradient(to right());
+  }
+}
