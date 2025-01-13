@@ -270,10 +270,13 @@ button:hover {
 }
 
 .ticket_in_main h2,
-p {
+.ticket_in_main p {
   margin: 0;
   display: flex;
   align-items: center;
+}
+.ticket_in_main p {
+  max-width: 80%;
 }
 
 .company span {
