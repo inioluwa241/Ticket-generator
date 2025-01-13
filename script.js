@@ -25,7 +25,7 @@ const ticketName = document.querySelector(".user h2");
 const ticketGitLink = document.querySelector(".user p");
 const ticketimage = document.querySelector(".user img");
 
-ticket.classList.add("hidden");
+// ticket.classList.add("hidden");
 
 let validName = true;
 let validEmail = true;
@@ -244,3 +244,5 @@ const uploadedImgFunc = function () {
     uploadedTextDiv.classList.remove("hidden");
   }
 };
+
+// if(){}

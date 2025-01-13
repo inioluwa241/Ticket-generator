@@ -238,24 +238,38 @@ button:hover {
   /* margin: 0 auto; */
   display: flex;
   letter-spacing: 1.2px;
+  margin-bottom: 8rem;
 }
+/* .sub_ticket {
+  margin: ;
+  width: 80vw;
+  height: 40vh;
+  background: center/cover url(./assets/images/pattern-ticket.svg);
+} */
 
 .ticket p {
   color: hsl(245, 15%, 58%);
 }
+
 .ticket .pattern-ticket {
+  background: red;
   width: 90%;
-  margin: 0 auto;
+  height: 100%;
+  /* height: 40rem; */
+  /* margin: 0 auto; */
 }
 
 .ticket_in {
+  background: green;
+
   position: absolute;
   top: 0;
   left: 5%;
   justify-content: space-between;
   display: flex;
   width: 90%;
-  height: 210px;
+  height: 90%;
+  /* height: 210px; */
 }
 .ticket_in_main {
   width: 81%;
@@ -272,6 +286,7 @@ button:hover {
 
 .ticket_in_main h2,
 p {
+  margin: 0;
   display: flex;
   align-items: center;
 }
@@ -280,6 +295,7 @@ p {
 .company {
   display: flex;
   align-items: center;
+  /* gap */
 }
 .avatar {
   height: 3.5rem;
