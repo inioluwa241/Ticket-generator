@@ -93,7 +93,6 @@ body {
   margin-bottom: 15px;
   border-radius: 10px;
   margin-top: 10px;
-  /* height: auto; */
   max-height: 3rem;
   max-width: 10%;
   min-width: 3rem;
@@ -119,7 +118,6 @@ body {
 }
 
 .uploaded_text_div {
-  /* display: none; */
   display: flex;
   gap: 10px;
 }
@@ -149,10 +147,7 @@ body {
 .error-message {
   height: auto;
   display: flex;
-  /* align-self: center; */
   justify-content: center;
-  /* margin-left: calc(4.5%); */
-  /* margin-left: 70px; */
 }
 
 .inputs {
@@ -235,51 +230,39 @@ button:hover {
   width: 100vw;
   position: relative;
   z-index: 100;
-  /* margin: 0 auto; */
   display: flex;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   margin-bottom: 8rem;
 }
-/* .sub_ticket {
-  margin: ;
-  width: 80vw;
-  height: 40vh;
-  background: center/cover url(./assets/images/pattern-ticket.svg);
-} */
 
 .ticket p {
   color: hsl(245, 15%, 58%);
 }
 
 .ticket .pattern-ticket {
-  background: red;
   width: 90%;
   height: 100%;
-  /* height: 40rem; */
-  /* margin: 0 auto; */
+  margin-left: 5%;
 }
 
 .ticket_in {
-  background: green;
-
   position: absolute;
   top: 0;
   left: 5%;
   justify-content: space-between;
-  display: flex;
+  display: grid;
+  grid-template-columns: 80% 20%;
   width: 90%;
-  height: 90%;
-  /* height: 210px; */
+  height: 80%;
 }
 .ticket_in_main {
-  width: 81%;
-  justify-content: space-between;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 10px;
 }
 .ticket_in_main div {
-  height: 50%;
+  height: 60%;
   width: 100%;
   text-transform: capitalize;
-  padding: 0 1rem;
   justify-self: center;
   align-content: center;
 }
@@ -291,15 +274,18 @@ p {
   align-items: center;
 }
 
+.company span {
+  margin: 0 auto;
+}
 .user,
 .company {
-  display: flex;
-  align-items: center;
-  /* gap */
+  display: grid;
+  grid-template-columns: 22% 88%;
 }
 .avatar {
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 auto;
   border-radius: 10px;
   object-fit: cover;
   object-position: center;
@@ -307,13 +293,14 @@ p {
 .side {
   align-self: center;
   color: hsl(245, 15%, 58%);
+  transform: rotate(270deg);
 }
 .side h3 {
-  transform: rotate(270deg);
+  transform: translateX(-15%);
+  place-self: center;
 }
 
 .span {
-  /* color: linear; */
   background: linear-gradient(to right());
 }
 
@@ -343,7 +330,6 @@ p {
 
   .second_element {
     margin: 0 auto;
-    /* background: red; */
     justify-items: center;
   }
   .second_element h2 {
@@ -357,6 +343,17 @@ p {
     margin-top: 1.3rem;
     max-width: 30%;
     text-align: center;
+    margin-bottom: 2rem;
+  }
+  .ticket {
+    /* display: block; */
+    margin: 0 auto;
+    width: 60%;
+    position: relative;
+    z-index: 100;
+    /* display: flex; */
+    /* justify-self: center;
+    margin-top: 6rem;*/
   }
 }
 @media screen and (min-width: 1400px) {
@@ -370,7 +367,6 @@ p {
 
   .second_element {
     margin: 0 auto;
-    /* background: red; */
     justify-items: center;
   }
   .second_element h2 {
@@ -439,7 +435,6 @@ p {
   }
 
   .span {
-    /* color: linear; */
     background: linear-gradient(to right());
   }
 }

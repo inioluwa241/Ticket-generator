@@ -25,12 +25,14 @@ const ticketName = document.querySelector(".user h2");
 const ticketGitLink = document.querySelector(".user p");
 const ticketimage = document.querySelector(".user img");
 
-// ticket.classList.add("hidden");
+ticket.classList.add("hidden");
 
 let validName = true;
 let validEmail = true;
 let validGithub = true;
 const usersObj = {};
+
+console.log(getComputedStyle(document.querySelector(".pattern-ticket")).width);
 const logobj = function () {
   secondElementH2.innerHTML = `Congrats, <span class="gradient">${usersObj.name}</span>! Your ticket is ready.`;
 
@@ -85,6 +87,7 @@ const handleErrorFunc = function () {
     logobj();
     ticket.classList.remove("hidden");
     form.classList.add("hidden");
+    setEqualHeight();
   }
 };
 
@@ -211,7 +214,7 @@ form.addEventListener("submit", function (e) {
   usersObj.name = nameInput.value;
   usersObj.email = emailInput.value;
   usersObj.githubInputLink = githubInput.value;
-  // logobj();
+  logobj();
 });
 
 // Function to upload the image
@@ -246,3 +249,11 @@ const uploadedImgFunc = function () {
 };
 
 // if(){}
+const setEqualHeight = function () {
+  document.querySelector(".ticket_in").style.width = getComputedStyle(
+    document.querySelector(".pattern-ticket")
+  ).width;
+};
+setEqualHeight();
+
+window.addEventListener("resize", setEqualHeight);
